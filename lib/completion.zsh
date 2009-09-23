@@ -25,7 +25,7 @@ unsetopt MENU_COMPLETE
 # should this be in keybindings?
 bindkey -M menuselect '^o' accept-and-infer-next-history
 
-zstyle ':completion:*:*:*:*:*' menu yes select
+zstyle ':completion:*:*:*:*:*' menu select=1
 # zstyle ':completion:*:*:*:*:processes' force-list always
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
