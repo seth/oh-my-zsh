@@ -44,16 +44,6 @@ chpwd() {
 chpwd
 
 
-#--- Set some limits
-#
-HISTSIZE=2000
-SAVEHIST=2000
-HISTFILE=~/.zsh_history
-DIRSTACKSIZE=15
-#
-#---
-
-
 #--- misc. zsh stuff
 #
 cdpath=( ~/src ~/Notebook ~/Dropbox ~/Documents ~/evri ~/evri/zgst)
