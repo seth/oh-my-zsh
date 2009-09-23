@@ -1,0 +1,28 @@
+alias cd..='cd ..'
+alias sourcerc='. ~/.zshrc'
+alias grep="grep -E --color=auto"
+[[ "$EMACS" == "t" ]] && alias ls='ls -F' || alias ls='ls -F'
+alias ll='ls -l'
+alias lld='ll --directory'
+alias llt='ll -r --sort=time'
+alias lls='ll -r --sort=size'
+alias d='dirs -v'
+alias -g  G='|grep'
+alias -g  L='|less'                                                             
+alias -g  H='|head'                                                             
+alias -g  T='|tail'                                                             
+alias -g  V='|vim -c "setlocal buftype=nofile" -'
+alias -g GV="|grep -v"
+alias -g AO='2>&1'
+alias -g DN='2>/dev/null'
+alias -g  X='|xargs'
+alias -g E='emacs --no-windows'
+alias -g DBR='diff --brief -r'
+alias -g DR='diff -r'
+alias pg='pg_ctl -D ~/pgdata -l ~/pgdata/psql.log'
+alias ec='emacsclient'
+alias ect='emacsclient -t'
+alias ecn='emacsclient -n'
+alias erlman='erl -man'
+alias xmlcurl="curl -H Accept:text/xml"
+alias mg="mg -n" # no backup files
