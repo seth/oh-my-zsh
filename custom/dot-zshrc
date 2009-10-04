@@ -5,6 +5,10 @@ export ZSH=$HOME/src/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 export ZSH_THEME="seth"
 
+# This has to come before compinit
+fpath=(~/src/oh-my-zsh/custom/completion $fpath)
+autoload -U ~/src/oh-my-zsh/custom/completion/*(:t)
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -31,6 +35,7 @@ path=(
     /usr/texbin
     $path
 )
+
 
 chpwd() {
     [[ -t 1 ]] || return
